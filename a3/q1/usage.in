@@ -1,0 +1,21 @@
+create a 1000001/10
+create b 1/10
+- a b
+-= a b
+
+create a -10001 / 10
+create b 1/ 10
+
++ a b
++= a b 
+
+create c -169/ -81
+
+create d 13/-3
+
+/ c d
+
+create a 101/ 50
+create b 25/101
+* a b
+	quit

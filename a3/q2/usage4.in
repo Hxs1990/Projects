@@ -1,0 +1,25 @@
+ra "hey there"
+rd "twitter.com"
+rb "check out my twitter at"
+rc "/dogs"
+
+pa pb pd pc
+
+ia0H
+^a100 " guys!"
+^a15 " "
+
+^b0 "Please "
+^b100 " "
+^d5 "ing"
+^c1 "cool/refreshing"
+^c110 "."
+pa pb pd pc
+
++aab
++aad
++aac
+pa pb pc pd
+
+pa
+q

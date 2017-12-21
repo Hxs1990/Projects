@@ -1,0 +1,29 @@
+create a
+0/1
+
+u- a
+print a
+create d 15/1
+
+-= a d
+print a
+u- 
+a
++= a d
+print a
+u- a 
+u- d
++= a d
+u- a 
+u- d
+
+create b -17/ 5
+print b 
+u- b
+print b
+* a b
+-= d b
+-= b d
+print b
+print d
+

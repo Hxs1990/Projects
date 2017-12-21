@@ -1,0 +1,28 @@
+create a 100000000 / 2500
+create  b 666666/3
+print a 
+print b
++ a b
+- b a
+* b a
+* a b
+/ a b
+/ b a
+
+-= b b
++= b b
+-= a a
++= a a
+
+* a b
+create c 63200000/2
+create d 40/ -7
++ c d
++ c b 
++ a d
+- d a 
+
+* b c
+* d a
+quit
+p a

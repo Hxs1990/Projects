@@ -1,0 +1,23 @@
+print 0
+attach 0 0 -1
+attach 0 0 10
+attach 0 0 100
+attach 
+0
+0 120
+attach 0 4 121
+attach 0 4 122
+attach 0 4 123
+attach 0 4 124
+attach 0 4 125
+attach 0 4 126
+attach 0 4 127
+attach
+0
+4
+128
+attach 0 4 129
+print 0
+print 3
+print 7
+print 9

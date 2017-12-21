@@ -1,0 +1,50 @@
+create
+a 0/     
+
+	-1000
+
+create
+b 1/3
+
+create
+c 1/3
+
+print a 
+print b
+print c
+
+/
+a
+b
+
+*
+b
+a
+
++= b c
+print b
++= b c
+print b
++= b 
+c
+print b
+print
+c
+
+* a b
+* b c
+* a c
+
+-= b c
+print b
+-= b c
+print b
+-= b c
+print b
++= c c
+print b
+-= b c
+print b
+
+
+

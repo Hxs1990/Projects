@@ -1,0 +1,24 @@
+create a -0/   100000
+print a
+create b 1/ 10
++= b b
+-= a a
+print a
+create c 512   /4
+-= a c
+print a 
+create b 10/3
+create d 10/-3
++= b d
+* b a
++= a b
+create a 1/-10
+create b 10/-1
+* a b
+
+create c 0/1000
+/ c a
+/ c b
+
+quit
+

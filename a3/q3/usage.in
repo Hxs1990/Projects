@@ -1,0 +1,24 @@
+create a 1/1 2 5/2 1 0/1 0
+create b 0/1 0
+create c 15/-4 0
+print a print b
+subtract
+b a 
+subtract
+a b
+add 
+c c
+multiply
+c c
+multiply c b
+
+divide 
+b c
+
+divide a c
+
+move_assign a b
+add a c
+
+print a print b print b
+quit

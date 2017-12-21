@@ -1,0 +1,31 @@
+create a 29/7
++= a a
++= a a
++= a a
++= a a
++= a a
++= a a
++= a a
++= a a
++= a a
+create b -9/-1
+/ a b
+
+create a 107/9
+create b -42/-9
+create c 70/18
+create d -10 / 3
+
++= a b
+-= a c
++= a d
+print a
+
+* d b
+* d a
+* c d
+* b a
+* a a
+
+quit
+

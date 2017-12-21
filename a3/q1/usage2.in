@@ -1,0 +1,41 @@
+create 
+a
+0/1
+
+create 
+b
+-1/1
+
+create
+c
+-3/3
+
+create d -6298342/1248129
++ d d
+- d d
+u- a u- b u- c
+u-
+d
+
++= b a
++= c a
+-=
+d 
+a
+-= d
+c
+-= d
+b
+
+* a b
+* b c
+* d d
+* c 
+b
+
+/ b b
+/ d b
++= a c
+-= b c
+print a
+print b print c print d

@@ -1,0 +1,11 @@
+create a -4/7 50
+create b -24/7 1
+divide a b
+divide b a
+print a
+print b
+add a b
+multiply a b
+subtract b a
+subtract a b
+quit

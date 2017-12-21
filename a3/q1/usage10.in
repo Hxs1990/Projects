@@ -1,0 +1,25 @@
+print a print b print c print d
+create a -3/7
+create b -19/20
+* a b
+/ a b
+
+create c 20/1
+/ b c
+/ c b
+* b c
+* c b
+
+- a a
+-= a a
+-= a a
+-= a a
+-= a a
+* a a
+
+create d -66/31
+create c -20/2
+* d c
+/ d c
+/ c d
+

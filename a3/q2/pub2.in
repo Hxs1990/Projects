@@ -1,0 +1,7 @@
+r a "Hello World"
+^ a 6 "great "
+^ a 6 "super "
+^ a 0 "Ahh "
+d a
+
+

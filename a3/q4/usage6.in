@@ -1,0 +1,21 @@
+attach 0 0 1
+attach 0 0 2
+attach 0 0 3
+attach 0 3 10
+attach 1 0 20
+attach 1 0 30
+attach 0 1 4
+attach 2 0 6
+attach 2 1 7
+attach 1 1 35
+print 0
+print 1
+print 2
+print 3
+mutate 0 1 99
+print 0
+print 2
+print 3
+mutate 1 1 40
+print 4
+print 1

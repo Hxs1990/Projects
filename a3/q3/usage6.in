@@ -1,0 +1,13 @@
+create a -4/9 10 4/3 0
+create b 9/ -4 10 4 /3 0
+multiply a b
+add a b
+subtract b a
+divide a b
+divide b a
+move_assign a c
+move_assign b d
+create a 0/1 9 -0/-4 4 -0/2 1 12/ 9 0
+subtract c a
+divide c a
+divide a d print a print b print c print d

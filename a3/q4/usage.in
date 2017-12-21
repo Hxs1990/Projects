@@ -1,0 +1,15 @@
+print 0
+attach 0 0 -1
+attach 0 0 10
+attach 0 0 15
+attach 0 0 30
+attach 0 0 100
+attach 
+0
+0 120
+attach 0 0 121
+attach
+0
+1
+128
+print 0

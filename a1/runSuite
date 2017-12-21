@@ -1,0 +1,46 @@
+#!/bin/bash
+errMsg () {
+    echo "Test failed: ${i}" 
+    echo "Args:"
+    if [ -e ${i}.args ];then
+	cat ${i}.args
+    fi
+    echo "Expected:"
+    cat ${i}.out
+    echo "Actual:"
+    cat ${tmpfile}
+}
+
+if [ ${#} -ne 2 ];then
+    echo "Program only accepts 2 arguments." >&2
+    exit 1
+fi
+
+for i in $(cat ${1})
+do
+    tmpfile=$(mktemp -q /tmp/${i}.XXXXXXXXXX)
+    if [ -r ${i}.out ];then
+	 if [ -e ${i}.args ];then
+         ${2} $(cat ${i}.args) > ${tmpfile}
+	 cmp -s ${tmpfile} ${i}.out
+	 result=${?}
+	    if [ ${result} -ne 0 ];then
+		errMsg
+	    fi
+	else
+	    ${2} > ${tmpfile}
+	    cmp -s ${tmpfile} ${i}.out
+	    result=${?}
+	        if [ ${result} -ne 0 ];then
+                    errMsg
+		fi
+	fi
+    else
+	echo "Missing/unreadable file ${i}.out..." >&2
+	rm ${tmpfile}
+	exit 2
+    fi
+    rm ${tmpfile}
+done
+
+

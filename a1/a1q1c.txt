@@ -1,0 +1,1 @@
+egrep -vc cs246 myfile.txt 

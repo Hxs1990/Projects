@@ -1,0 +1,4 @@
+testRead testShift
+usage
+printShift
+wrong

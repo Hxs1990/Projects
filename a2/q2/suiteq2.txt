@@ -1,0 +1,12 @@
+onlySym 
+spaces
+onlyLeft onlyRight biggerthan25 smallthan0
+shiftZero justDir
+abuse
+normal
+
+
+numbers
+long
+alphabet
+at25

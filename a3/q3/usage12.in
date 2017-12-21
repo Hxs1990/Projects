@@ -1,0 +1,8 @@
+create a 1/1 2 -1/1 1 1/1 0 
+create b 1/1 2 1/1 1 1/1 0
+multiply a b
+add a b
+subtract b a
+subtract a b
+add b a
+quit

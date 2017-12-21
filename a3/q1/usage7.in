@@ -1,0 +1,36 @@
+create a
+-0
+/
+-10
+create b
+-0
+/
+1
+create c
+-230/
+-230
+create d
+-1256/
+-7
+print a
+print b
+print c
+print d
+create a
+-14/ -7
+print a
+create a
+-10 / -9
+print a
+create b -512/-64
+print b
+* a b
+- a b
++ a b
+/ a b
++ d d
+- d d
++= c a
++= c b
++= c d
+print c

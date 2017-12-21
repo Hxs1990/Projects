@@ -1,0 +1,14 @@
+create a 10/14 21 -7/4 13 -4/10 2 0/-1 1 1/-1 0
+create b 12/4 1 7/31 0
+divide a b
+create d 0/1 0
+multiply		b a
+multiply
+d a
+subtract b a
+subtract d b create a 10/15 21 8/-7 12 -1/1 4 move_copy d c
+divide c a
+print a
+print b
+print 
+c

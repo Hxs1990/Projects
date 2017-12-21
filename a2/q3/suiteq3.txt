@@ -1,0 +1,13 @@
+badargs noargs
+longwords
+spaces
+left centerEven centerOdd
+ right
+
+long short
+sym
+free
+stacked
+decreasingSize
+increasingSize
+

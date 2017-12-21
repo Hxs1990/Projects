@@ -1,0 +1,19 @@
+create d 9/2 4
+print d
+create a -9/2 4 1/3 1
+subtract a d
+subtract d a
+divide a d
+divide d a
+create b 0/1 0
+divide b a
+subtract a b
+subtract b a
+multiply a b
+add b a
+move_assign a b
+add a d
+subtract a d
+multiply a d
+divide a d
+quit

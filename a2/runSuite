@@ -1,0 +1,74 @@
+#!/bin/bash
+
+errMsg () {
+    echo "Test failed: ${i}" 
+    echo "Args:"
+    if [ -e ${i}.args ];then
+        cat ${i}.args
+    fi
+    echo "Input:"
+    if [ -e ${i}.in ];then 
+	cat ${i}.in 
+    fi
+    echo "Expected:"
+    cat ${i}.out
+    echo "Actual:"
+    cat ${tmpfile}
+}
+
+if [ ${#} -ne 2 ];then
+    echo "Program only accepts 2 arguments." >&2
+    exit 1
+fi
+
+for i in $(cat ${1})
+do
+    if [ -e ${i}.in ];then
+    	if [ -r ${i}.out ];then
+            if [ -e ${i}.args ];then
+            tmpfile=$(mktemp -q /tmp/${i}.XXXXX)
+            ${2} $(cat ${i}.args) < ${i}.in  > ${tmpfile}
+            cmp -s ${tmpfile} ${i}.out
+            result=${?}   
+	       if [ ${result} -ne 0 ];then
+                  errMsg
+               fi
+            else
+               tmpfile=$(mktemp -q /tmp/${i}.XXXXX)
+               ${2} < ${i}.in  > ${tmpfile}
+               cmp -s ${tmpfile} ${i}.out
+               result=${?}
+                  if [ ${result} -ne 0 ];then
+                      errMsg
+                  fi
+            fi
+        else
+            echo "Missing/unreadable file ${i}.out..." >&2
+            exit 2
+        fi
+    else
+    	if [ -r ${i}.out ];then
+            if [ -e ${i}.args ];then
+            tmpfile=$(mktemp -q /tmp/${i}.XXXXX)
+            ${2} $(cat ${i}.args) > ${tmpfile}
+            cmp -s ${tmpfile} ${i}.out
+	    result=${?}
+               if [ ${result} -ne 0 ];then
+                  errMsg
+               fi
+            else
+               tmpfile=$(mktemp -q /tmp/${i}.XXXXX)
+               ${2} > ${tmpfile}
+               cmp -s ${tmpfile} ${i}.out
+               result=${?}
+                  if [ ${result} -ne 0 ];then
+                      errMsg
+                  fi
+            fi
+        else
+            echo "Missing/unreadable file ${i}.out..." >&2
+            exit 2
+        fi
+    fi
+    rm ${tmpfile}
+done

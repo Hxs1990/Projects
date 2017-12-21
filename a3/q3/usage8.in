@@ -1,0 +1,13 @@
+create a 6/7 3 -3/ 8 2 -3/22 1 4/1 0
+create b -3/31 4 -7/-7 0
+multiply a b
+divide b a
+divide a b
+subtract b a
+add b a create c 8/1 3 4/1 2 2/1 1 1/1 0 
+create d -2/-1 0 divide c d
+create d -2/1 0
+divide c d
+divide d c
+multiply a c
+multiply c c

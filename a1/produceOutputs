@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [ ${#} -ne 2 ];then
+    echo "Program only accepts 2 arguements." >&2
+    exit 1
+fi
+
+for i in $(cat ${1})
+do
+    if [ -e ${i}.args ];then
+	 ${2} $( cat ${i}.args ) > ${i}.out
+    else
+	${2} > ${i}.out
+    fi
+done
+ 
+
+
+
+

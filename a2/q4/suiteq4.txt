@@ -1,0 +1,8 @@
+noargs argflags1 argflags2 argflags3 argflags4
+empty
+emptyf
+
+onefile
+twofile
+largeinput
+justfile

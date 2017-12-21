@@ -1,0 +1,15 @@
+attach 0 0 1
+mutate 0 1 1000
+print 0
+attach 0 1 2
+attach 1 0 3
+attach 1 0 4
+mutate 1 1 10
+print 1
+attach 1 0 5
+attach 1 0 6
+attach 1 0 7
+print 1
+attach 0 0 11
+print 0
+

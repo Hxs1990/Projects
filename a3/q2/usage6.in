@@ -1,0 +1,27 @@
+ra "Hello"
+^a5 " there"
+^a11 " how are you doing"
+^a100 " today?"
+p a
+cba
+^b100 " nice weather we're having?"
+^b5 " there"
+pb^b5" there"
+pb
+ib0 b
+ccb
+^c14 " AN INTERUPPTION "
+^c40 "	\n nice 302l1l1ll1 \? "
+ic15 ?
+pc
+cdc 
++aab
++aac
++aad
+pa
+ia45 ?
+pa
+ia100 #
+^a0 "?????^#IWNG"
+pa
+q

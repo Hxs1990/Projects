@@ -1,0 +1,12 @@
+create a -64 / -8 1 -1/1 0
+create b 80 /10 1 1/1 0
+multiply a b
+multiply b b
+subtract a b
+divide b a
+create c -18 / 7 0
+create d -20 / -3 0
+move_assign a d
+multiply a b
+multiply b b
+multiply a a subtract a b subtract b b divide a b divide b a
